@@ -1,7 +1,7 @@
-import express from 'express';
+import { Router } from 'express';
 import infoCursos from "../datos/cursos.js";
 
-const routerProgramacion = express.Router();
+const routerProgramacion = Router();
 
 routerProgramacion.get('/', (req, res) => {
   res.send(JSON.stringify(infoCursos.programacion));
